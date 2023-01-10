@@ -56,7 +56,10 @@ long_comp <- lat_long[,1]
 ## Get dates ----
 ##### 2003-2005   2015-2017
 fi <- seq(as.Date("2003-01-01"), length=36, by="month")
+fi <- fi[c(3:8,15:20,27:32)]
+
 ff <- seq(as.Date("2003-02-01"), length=36, by="month")-1
+ff <- ff[c(3:8,15:20,27:32)]
 
 f_inicio <- data.frame(fecha_mal = fi) %>% 
   separate(fecha_mal, into = c("dia", "mes", "año")) %>%
