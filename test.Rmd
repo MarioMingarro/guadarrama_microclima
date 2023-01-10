@@ -90,9 +90,9 @@ invisible(for (j in 1:2){
     tmax <- temp$tmax
     tmin <-temp$tmin
     tmed <- temp$tmean
-    writeRaster(tmax, paste0("B:/MARIPOSAS/TRANSECTOS_MICROCLIMA/MICROCLIMA/TMAX/tmax_", j, "_", gsub("/","_", substr(f_inicio[i,], 4,10)),".tif"))
-    writeRaster(tmin, paste0("B:/MARIPOSAS/TRANSECTOS_MICROCLIMA/MICROCLIMA/TMIN/tmin_", j, "_", gsub("/","_", substr(f_inicio[i,], 4,10)),".tif"))
-    writeRaster(tmed, paste0("B:/MARIPOSAS/TRANSECTOS_MICROCLIMA/MICROCLIMA/TMED/tmed_", j, "_", gsub("/","_", substr(f_inicio[i,], 4,10)),".tif"))
+    writeRaster(tmax, paste0("B:/MARIPOSAS/TRANSECTOS_MICROCLIMA/MICROCLIMA/2003_2005/TMAX/tmax_", j, "_", gsub("/","_", substr(f_inicio[i,], 4,10)),".tif"))
+    writeRaster(tmin, paste0("B:/MARIPOSAS/TRANSECTOS_MICROCLIMA/MICROCLIMA/2003_2005/TMIN/tmin_", j, "_", gsub("/","_", substr(f_inicio[i,], 4,10)),".tif"))
+    writeRaster(tmed, paste0("B:/MARIPOSAS/TRANSECTOS_MICROCLIMA/MICROCLIMA/2003_2005/TMED/tmed_", j, "_", gsub("/","_", substr(f_inicio[i,], 4,10)),".tif"))
   }
 })
 
